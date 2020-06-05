@@ -7,8 +7,7 @@ function getPosts() {
         const posts = document.getElementById("posts");
         data.forEach((post) => {
           //   console.log(post);
-          posts.innerHTML +=
-            "<li><b>" + post.title + "</b> - " + post.body + "</li>";
+          posts.innerHTML += `<li><b>${post.title}</b> - ${post.body}</li>`;
         });
       } else {
         alert("데이터가 존재하지 않습니다.");
